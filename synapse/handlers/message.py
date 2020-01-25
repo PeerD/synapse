@@ -796,7 +796,7 @@ class EventCreationHandler(object):
         if type(event_allowed) is tuple:
             event_allowed, error_message = event_allowed
         else:
-            error_message = "This event is not allowed in this context 4"
+            error_message = "This event is not allowed in this context"
         if not event_allowed:
             raise SynapseError(
                 403, error_message, Codes.FORBIDDEN
