@@ -571,7 +571,7 @@ class RoomCreationHandler(BaseHandler):
         if type(event_allowed) is tuple:
             event_allowed, error_message = event_allowed
         else:
-            error_message = "You are not permitted to create rooms 2"
+            error_message = "You are not permitted to create rooms"
         if not event_allowed:
             raise SynapseError(403, error_message, Codes.FORBIDDEN)
 
